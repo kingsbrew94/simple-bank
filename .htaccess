@@ -1,0 +1,29 @@
+Options All -Indexes
+IndexIgnore *
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    DirectoryIndex init.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)$ init.php/$1 [QSA,L]
+</IfModule>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^(watch\.json|get\.json|post\.json)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "(\.(json|xml|xsd|ini|log|psd|sh|properties|config|php)|fly-env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.well-known$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+<FilesMatch "init\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

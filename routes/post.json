@@ -1,0 +1,36 @@
+[
+    {
+        "@url"        : "/super/service/login",
+        "@controller" : "adminLogin@UserAuthenticationController"
+    },
+    {
+        "@url"        : "/super/service/add-account",
+        "@name"       : "create_cus",
+        "@controller" : "addCustomerAccount@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/edit-account",
+        "@name"       : "editAcc",
+        "@controller" : "editCustomerAccount@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/credit-debit-account",
+        "@name"       : "creditDebitAccount",
+        "@controller" : "creditDebitAccount@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/change-password",
+        "@name"       : "changePass",
+        "@controller" : "changePassword@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/update-customer-image",
+        "@name"       : "updateCustomerImage",
+        "@controller" : "updateCustomerImage@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/update-transfer-restriction",
+        "@name"       : "setRestriction",
+        "@controller" : "updateTransferRestriction@AdministrationServiceController"
+    }
+]

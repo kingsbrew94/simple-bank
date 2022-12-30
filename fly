@@ -1,0 +1,1 @@
+<?php require_once('fly_env/cligen/start.php');init_cmds($argc,$argv); ?>

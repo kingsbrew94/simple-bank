@@ -1,0 +1,123 @@
+[
+    {
+        "@url":"/404",
+        "@static":"404/error_page",
+        "@payload":{
+            "app_name":"ERROR::404"
+        }
+    },
+    {
+        "@url":"/admin/service/login",
+        "@name": "adminHome",
+        "@controller": "adminLoginSite@UserAuthenticationController",
+        "@static": "admin/login"
+    },
+    {
+        "@url":"/admin/view-accounts",
+        "@name": "view_acc",
+        "@controller": "@Administration",
+        "@static": "admin/view-account"
+    },
+    {
+        "@url":"/admin/edit-acccount-detail",
+        "@name": "edit_acc",
+        "@controller": "editAccount@AdministrationServiceController",
+        "@static": "admin/edit"
+    },
+    {
+        "@url":"/admin/edit-customer-image",
+        "@name": "edit_cus_image",
+        "@controller": "editAccount@AdministrationServiceController",
+        "@static": "admin/edit-customer-image"
+    },
+    {
+        "@url":"/admin/view-account-detail",
+        "@name": "view_acc_detail",
+        "@controller": "viewAccountDetails@AdministrationServiceController",
+        "@static": "admin/details"
+    },
+    {
+        "@url":"/admin/add-account",
+        "@name": "add_acc",
+        "@static":"admin/add-account",
+        "@controller": "addAccount@Administration"
+    },
+    {
+        "@url": "/admin/service/add-trans-codes",
+        "@name": "add_trans_code",
+        "@static": "admin/transaction-codes",
+        "@controller": "addTransactionCodes@Administration"
+    },
+    {
+        "@url": "/admin/service/admin-logout",
+        "@name": "adlogout",
+        "@controller": "adminLogout@UserAuthenticationController"
+    },
+    {
+        "@url": "/admin/service/credit-debit",
+        "@name": "credit",
+        "@static": "admin/credit-debit",
+        "@controller": "creditDebit@Administration"
+    },
+    {
+        "@url": "/admin/service/onoff",
+        "@name": "onoff",
+        "@static": "admin/onoff",
+        "@controller": "onOff@Administration"
+    },
+    {
+        "@url": "/admin/service/iban",
+        "@name":"iban",
+        "@static": "admin/iban",
+        "@controller": "iban@Administration"
+    },
+    {
+        "@url": "/admin/service/view-transfer",
+        "@name": "view_transfer",
+        "@static": "admin/view-transfer",
+        "@controller": "viewTransfer@Administration"
+    },
+    {
+        "@url": "/admin/service/view-transactions",
+        "@name": "view_tranx",
+        "@static": "admin/view-transactions",
+        "@controller": "viewTransaction@Administration"
+    },
+    {
+        "@url": "/admin/service/access-logs",
+        "@name": "access_logs",
+        "@static": "admin/access-logs",
+        "@controller": "accessLogs@Administration"
+    },
+    {
+        "@url": "/admin/service/change-password",
+        "@name": "change_pass",
+        "@static": "admin/change-password",
+        "@controller": "changePassword@Administration"
+    },
+    {
+        "@url": "/admin/service/user-logout",
+        "@name": "ulogout",
+        "@controller": "userLogout@UserAuthenticationController"
+    },
+    {
+        "@url"        : "/super/service/delete-transaction",
+        "@name"       : "delTransaction",
+        "@controller" : "deleteTransaction@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/delete-transfer",
+        "@name"       : "delTransfer",
+        "@controller" : "deleteTransfer@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/delete-access-log",
+        "@name"       : "delAccessLog",
+        "@controller" : "deleteAccessLog@AdministrationServiceController"
+    },
+    {
+        "@url"        : "/super/service/delete-customer",
+        "@name"       : "delCustomer",
+        "@controller" : "deleteCustomerAccount@AdministrationServiceController"
+    }
+]

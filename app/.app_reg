@@ -1,0 +1,20 @@
+
+;;; Hosts / Server Names
+
+[SERVER_CONFIG_HOSTS]
+default = 'localhost'
+
+;;; Users
+
+[SERVER_CONFIG_USERS]
+default = 'root'
+
+;;; Access Passwords
+
+[SERVER_CONFIG_PASSWORDS]
+default = 'root'
+
+;;; Models
+
+[APP_MODELS]
+default = 'offshore_bank_db'
