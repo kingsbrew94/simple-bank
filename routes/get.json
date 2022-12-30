@@ -7,7 +7,7 @@
         }
     },
     {
-        "@url":"/admin/service/login",
+        "@url":"/",
         "@name": "adminHome",
         "@controller": "adminLoginSite@UserAuthenticationController",
         "@static": "admin/login"
